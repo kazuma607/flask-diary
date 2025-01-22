@@ -1,0 +1,20 @@
+/* 良い表現のハイライト */
+highlight-good {
+    background-color: #ffffcc; /* 優しい黄色 */
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+/* 改善点のハイライト */
+highlight-improve {
+    background-color: #ccffcc; /* 優しい緑 */
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+/* 参考表現リストのスタイル */
+.reference-expressions {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
