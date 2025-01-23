@@ -43,7 +43,7 @@ def chat(entry_id):
             response = openai.ChatCompletion.create(
                 model="gpt-4",
                 messages=[
-                    {"role": "system", "content": "あなたは日本語学習者の会話練習パートナーです。返答は30文字以内にまとめてください。内容はCEFR A2レベルでわかりやすくしてください。"},
+                    {"role": "system", "content": "あなたは日本語学習者の会話練習パートナーです。以下の会話から会話を続けてください。返答は30文字以内にまとめてください。内容はCEFR A2レベルでわかりやすくしてください。"},
                     {"role": "user", "content": entry.content},
                     {"role": "user", "content": user_message}
                 ]
@@ -59,7 +59,7 @@ def chat(entry_id):
         initial_response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "あなたは日本語学習者の会話練習パートナーです。返答は30文字以内にまとめてください。内容はCEFR A2レベルでわかりやすくしてください。"},
+                {"role": "system", "content": "あなたは日本語学習者の会話練習パートナーです。以下の会話から会話を続けてください。返答は30文字以内にまとめてください。内容はCEFR A2レベルでわかりやすくしてください。"},
                 {"role": "user", "content": entry.content}
             ]
         )
